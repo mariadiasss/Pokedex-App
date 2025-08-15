@@ -19,7 +19,7 @@ export default function Card({ pokemon }) {
           ]}>
           <View style={styles.info}>
             <Text style={styles.numero}>#{pokemon.Numero}</Text>
-            <Text style={styles.Nome}>{pokemon.Nome}</Text>
+            <Text style={styles.nome}>{pokemon.Nome}</Text>
             <ScrollView horizontal>
               {pokemon.Tipo.map((tipo) => (
                 <Button tipo= {tipo} key={tipo.Nome}/>
