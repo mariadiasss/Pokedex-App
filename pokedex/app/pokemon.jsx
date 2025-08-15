@@ -4,7 +4,7 @@ import Button from "../components/Button";
 import Header from "../components/Header";
 import TextInfo from "../components/TextInfo";
 
-const width =Dimensions.get("window").width;
+const width = Dimensions.get("window").width;
 
 export default function PokemonDetail() {
     const pokemon = useLocalSearchParams();
@@ -20,7 +20,7 @@ export default function PokemonDetail() {
             <View style={[styles.card, { backgroundColor: tipos[0].Cor }]}>
                 <View style={styles.imageContainer}>
                     <Image 
-                        source={{ uri: pokemon.Image }}
+                        source={{ uri: pokemon.Imagem }}
                         style={styles.image}
                         />
                 </View>
